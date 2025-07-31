@@ -103,3 +103,25 @@ Ler pequenas partes de algo e trabalhar com isto, mesmo sem ter o arquivo comple
 
 # Buffers
 
+# Testes
+
+Tipos de testes existentes
+
+- Unitários
+    - testa apenas uma unidade da sua aplicação, você testa especificamente uma função ou uma unidade específica da aplicação
+- integração
+    - Testa a comunicação entre duas ou mais unidades
+- e2e - ponta a ponta
+    - Simulam um usuário operando na nossa aplicação
+    - Faz tudo que um usuário faria normalmente na nossa aplicação
+    - front-end: "abre a página de login, digite o texto X no campo com ID email, clique no botão
+    - back-end: chamadas http, websockets
+
+Jamais escreva um teste que dependa de outro teste
+
+## Pirâmide de testes
+
+- E2E (não dependem de nenhuma tecnologia, não dependem de arquitetura)
+    - Porém não são utilizados em todos os cantos devidos ao seu custo e lentidão
+- Integração
+- Unitários (são base da pirâmide)
